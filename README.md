@@ -32,7 +32,7 @@ Examples:
 Write the code that can evaluate an expression and return a result
 
 Notes:
-* You can assume the expression is well formed : only number, all tokens separated by space
-* You can assume that the "stack" only contain one elements at the end
+* You can assume the expression is well formed : only natural numbers, all tokens separated by space
+* You can assume that the "stack" only contain one element at the end
 
 Don't forget to write tests
