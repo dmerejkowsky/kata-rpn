@@ -7,9 +7,9 @@ The reverse polish notation allow to write mathematical expressions without the 
 
 A RPN expression contains either
 
-* A number (x)
-* A sequence E1 E2 OP where E1 and E2 are expressions and OP an operator
-
+* A number
+* A sequence E1 E2 OP where E1 and E2 are expressions and OP an operator (hence the name, operator
+  comes *after* the operands)
 
 To evaluate a RPN expression, we use the following algorithm:
 
@@ -36,3 +36,19 @@ Notes:
 * You can assume that the "stack" only contain one element at the end
 
 Don't forget to write tests !
+
+## Going further
+
+* Implement different arities, like `sqrt`:
+
+```
+9 sqrt
+[3]
+``` 
+
+or `max`:
+
+```
+12 10 14 9 max
+[14]
+```
