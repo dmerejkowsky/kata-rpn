@@ -14,7 +14,7 @@ A RPN expression contains either
 To evaluate a RPN expression, we use the following algorithm:
 
 * Keep a list of values (called a "stack")
-* If the expression is a number, add it to the stack
+* If the expression is a number, push it to the stack
 * If the expression is an operator, pop two values from the stack and push the result to the stack
 
 Examples:
