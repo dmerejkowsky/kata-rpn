@@ -29,13 +29,14 @@ Examples:
 
 ## Rules
 
-Write the code that can evaluate an expression and return a result
+Write the code that can evaluate an expression and return a result.
+
+Follow the TDD rules as close as possible and try to make the smallest possible cycles.
 
 Notes:
 * You can assume the expression is well formed : only natural numbers, all tokens separated by space
 * You can assume that the "stack" only contain one element at the end
 
-Don't forget to write tests !
 
 ## Going further
 
