@@ -14,7 +14,7 @@ A RPN expression contains either
 To evaluate a RPN expression, we use the following algorithm:
 
 * Keep a list of values (called a "stack")
-* If the expression is a number, add it to the stack 
+* If the expression is a number, add it to the stack
 * If the expression is an operator, pop two values from the stack and push the result to the stack
 
 Examples:
@@ -23,13 +23,14 @@ Examples:
 20 2 +
 [20], [20, 2], [22]
 
-4 2 + 3 - 
+4 2 + 3 -
 [4], [4,2], [6], [6, 3], [3]
-``` 
+```
 
 ## Rules
 
-Write the code that can evaluate an expression and return a result.
+Write the code that can evaluate an expression (as a string) and return a result
+as an int.
 
 Follow the TDD rules as close as possible and try to make the smallest possible cycles.
 
@@ -44,12 +45,12 @@ Notes:
 
 ```
 9 sqrt
-[3]
-``` 
+3
+```
 
 or `max`:
 
 ```
 12 10 14 9 max
-[14]
+14
 ```
