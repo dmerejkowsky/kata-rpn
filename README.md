@@ -11,7 +11,7 @@ A RPN expression contains either
 * A sequence E1 E2 OP where E1 and E2 are expressions and OP an operator (hence the name, operator
   comes *after* the operands)
 
-To evaluate a RPN expression, we use the following algorithm:
+To evaluate a RPN expression, use the following algorithm:
 
 * Keep a list of values (called a "stack")
 * If the expression is a number, push it to the stack
