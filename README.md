@@ -13,11 +13,21 @@ A RPN expression contains either
 
 To evaluate a RPN expression, use the following algorithm:
 
-* Keep a list of values (called a "stack")
-* If the expression is a number, push it to the stack
-* If the expression is an operator, pop two values from the stack and push the result to the stack
+* Keep a list of values (called a *stack*)
+* Split the input on the spaces to get a list of *tokens*
+* For each token:
+  * If the token can be parsed as a number, push it to the stack
+  * Otherwise, pop two values from the stack, compute the result of the operation and push it to the stack
 
 Examples:
+
+|step|token|stack|
+|--|--|--|
+|0| | [ ] |
+|1|  20 | [20] |
+|2|  2 |[20, 2]|
+|3|  + | [22]|
+
 
 ```
 20 2 +
