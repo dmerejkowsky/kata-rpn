@@ -14,7 +14,7 @@ A RPN expression contains either
 To evaluate a RPN expression, use the following algorithm:
 
 * Keep a list of values (called a *stack*)
-* Split the input on the spaces to get a list of *tokens*
+* Split the input string on the spaces to get a list of *tokens*
 * For each token:
   * If the token can be parsed as a number, push it to the stack
   * Otherwise, pop two values from the stack, compute the result of the operation and push it to the stack
