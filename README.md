@@ -69,3 +69,14 @@ or `max`:
 12 10 14 9 max
 14
 ```
+
+* Allow integer and floats as expression
+
+* Handle all possible errors, with nice error messages
+
+```
+> 3 +
+Error: expecting two arguments for `+`, got one (3)
+```
+
+* Handle complex numbers
