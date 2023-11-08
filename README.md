@@ -1,4 +1,5 @@
 # kata-rpn
+
 Reverse Polish Notation Kata
 
 ## RPN Notation
@@ -42,15 +43,14 @@ For input: `4 2 + 3 -`
 |5 | - | [3]   |
 
 
-## Rules
+## Instructions
 
 Write the code that can evaluate an expression (as a string) and return a result
 as an int.
 
-Follow the TDD rules as close as possible and try to make the smallest possible cycles.
+Note that for your first implementation:
 
-Notes:
-* You can assume the expression is well formed : only natural numbers, all tokens separated by space
+* You can assume the expression is well formed : only natural numbers, all tokens separated by exactly one space, and so on ...
 * You can assume that the "stack" only contain one element at the end
 
 
