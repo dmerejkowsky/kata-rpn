@@ -12,9 +12,9 @@ class AnswerTest {
     void calcTest() {
         Answer answerTest = new Answer();
 
-        ArrayList<String> expression = new ArrayList<>();
-        expression.add("1");
-        expression.add("8");
+        ArrayList<Double> expression = new ArrayList<>();
+        expression.add(1.);
+        expression.add(8.);
 
         double value = answerTest.calc(expression, "+");
         Assertions.assertEquals(9., value);

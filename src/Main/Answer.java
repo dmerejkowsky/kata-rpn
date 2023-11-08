@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Answer {
     public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         ArrayList<String> operands = getOperation();
@@ -28,13 +29,9 @@ public class Answer {
         return new ArrayList<>(Arrays.asList(expression.split(" ")));
     }
 
-    public double calc(ArrayList<String> operands, String operator) {
-        int result = 0;
-        if(operator.equals("+")) {
-            for (String operand : operands) result += Double.parseDouble(operand);
-            return result;
-        }
+    public double calc(ArrayList<Double> operands, String operator) {
+        OperatorStrategyFactory factory = new OperatorStrategyFactory();
 
-        throw new ArithmeticException();
+        return factory.getStrategy(operator).apply(operands.get(0), operands.get(1));
     }
 }
